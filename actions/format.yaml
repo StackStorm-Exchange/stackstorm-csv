@@ -1,6 +1,6 @@
 ---
 name: format
-runner_type: run-python
+runner_type: python-script
 description: Format a Python list into a CSV string
 enabled: true
 entry_point: format.py
