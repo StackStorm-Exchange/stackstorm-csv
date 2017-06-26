@@ -12,7 +12,7 @@ __all__ = [
 class ParseCSVFileAction(Action):
     def run(self, file_path, delimiter=',', quote_char='"'):
         if not os.path.isfile(file_path):
-            raise ValueError('File "%s" doesnt exist')
+            raise ValueError('File "%s" doesnt exist' % (file_path))
 
         with open(file_path, 'r') as fp:
             content = fp.read()

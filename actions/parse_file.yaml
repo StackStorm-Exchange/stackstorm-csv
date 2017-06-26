@@ -1,7 +1,7 @@
 ---
-name: parse
+name: parse_file
 runner_type: python-script
-description: Parse file in a CSV format and return JSON object.
+description: Parse a file in CSV format and return JSON object.
 enabled: true
 entry_point: parse_file.py
 parameters:
