@@ -52,12 +52,12 @@ Output (result):
 
 ### format
 
-Format a list of dictionary objects into a CSV string
+Format a list of dictionary objects into a CSV string. Array (list) object is passed as the `data` parameter. Also accepts `delimiter` which defaults to `,` and `quote_char` which defaults to `"`.
 
 #### Example
 
 
-Input (object):
+Input: data (array):
 
 ```json
 [
