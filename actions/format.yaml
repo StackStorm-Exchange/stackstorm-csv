@@ -6,7 +6,7 @@ enabled: true
 entry_point: format.py
 parameters:
   data:
-    type: object
+    type: array
     description: Data to parse
     required: true
   delimiter:
