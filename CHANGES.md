@@ -1,5 +1,9 @@
 # Change Log
 
+# 0.4.3
+
+- Fix ``csv.parse`` and ``csv.format`` action so they work under Python 3.
+
 # 0.4.2
 
 - Change format data param to type array.
