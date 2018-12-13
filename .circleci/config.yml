@@ -11,6 +11,7 @@ jobs:
 
     environment:
       VIRTUALENV_DIR: "~/virtualenv"
+      FORCE_CHECK_ALL_FILES: "true"
 
     steps:
       - checkout
@@ -48,6 +49,7 @@ jobs:
 
     environment:
       VIRTUALENV_DIR: "~/virtualenv"
+      FORCE_CHECK_ALL_FILES: "true"
 
     steps:
       - checkout
@@ -59,7 +61,7 @@ jobs:
             git clone -b master git://github.com/stackstorm-exchange/ci.git ~/ci
             ~/ci/.circle/dependencies
       - run:
-          name: Run tests (Python 2.7)
+          name: Run tests (Python 3.6)
           command: ~/ci/.circle/test
       - save_cache:
           key: v1-dependency-cache-py36-{{ checksum "requirements.txt" }}
@@ -74,7 +76,6 @@ jobs:
             - tmp/st2
             - home/circleci/repo
             - home/circleci/.gitconfig
-
 
   deploy:
     docker:
@@ -107,3 +108,6 @@ workflows:
       - deploy:
           requires:
             - build_and_test_python27
+              #          filters:
+              #            branches:
+              #              only: master
