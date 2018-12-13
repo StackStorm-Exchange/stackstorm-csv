@@ -13,6 +13,8 @@ class ParseCSVFileAction(Action):
         if not os.path.isfile(file_path):
             raise ValueError('File "%s" doesnt exist' % (file_path))
 
+        print 'fail'
+
         result = []
         with open(file_path, 'r') as fh:
             reader = csv.reader(fh, delimiter=str(delimiter), quotechar=str(quote_char))
