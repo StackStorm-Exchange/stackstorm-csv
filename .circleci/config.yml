@@ -20,7 +20,7 @@ jobs:
       - run:
           name: Download dependencies
           command: |
-            git clone -b master git://github.com/stackstorm-exchange/ci.git ~/ci
+            git clone -b python3_pack_ci git://github.com/stackstorm-exchange/ci.git ~/ci
             ~/ci/.circle/dependencies
       - run:
           name: Run tests (Python 2.7)
@@ -58,7 +58,7 @@ jobs:
       - run:
           name: Download dependencies
           command: |
-            git clone -b master git://github.com/stackstorm-exchange/ci.git ~/ci
+            git clone -b python3_pack_ci git://github.com/stackstorm-exchange/ci.git ~/ci
             ~/ci/.circle/dependencies
       - run:
           name: Run tests (Python 3.6)
