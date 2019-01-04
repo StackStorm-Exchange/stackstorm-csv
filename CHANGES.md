@@ -1,5 +1,9 @@
 # Change Log
 
+# 0.4.4
+
+- Version bump to fix tagging issue
+
 # 0.4.3
 
 - Fix ``csv.parse`` and ``csv.format`` action so they work under Python 3.
