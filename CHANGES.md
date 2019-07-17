@@ -1,5 +1,9 @@
 # Change Log
 
+# 0.4.5
+
+- Version bump to fix index.json version issue for ``csv``
+
 # 0.4.4
 
 - Version bump to fix tagging issue
