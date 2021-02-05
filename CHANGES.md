@@ -1,5 +1,9 @@
 # Change Log
 
+# 1.0.0
+
+* Drop Python 2.7 support
+
 # 0.4.5
 
 - Version bump to fix index.json version issue for ``csv``
